@@ -1,0 +1,9 @@
+{
+    "Admin": true,
+    "Teacher": true,
+    "Student": true,
+    "Question": true,
+    "Constant": true,
+    "Exam": true,
+    "Panel": true
+}
