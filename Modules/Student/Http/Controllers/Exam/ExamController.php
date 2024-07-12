@@ -187,9 +187,13 @@ class ExamController extends Controller
             ['exam_id', $exam->id],
             ['student_id', $student->id],
         ])->first();
+        $my_choices = StudentExamQuestionsAnswers::withoutTrashed()->with('answer')->where([
+            ['student_id',$student->id],
+            ['exam_id',$exam->id],
+        ])->get();
         $now = Carbon::now();
         if ($check != null and $now->gt($exam->end_at)) {
-            return view('student::layouts.exams.preview', compact(['exam', 'page_name']));
+            return view('student::layouts.exams.preview', compact(['exam', 'page_name','my_choices']));
         } else {
             alert()->toast('You Dont Have A Permeation To Preview This Exam ', 'error');
             return redirect()->route('student.show.my.finished.exams');

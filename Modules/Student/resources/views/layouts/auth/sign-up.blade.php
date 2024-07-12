@@ -83,10 +83,10 @@
                                         </button>
                                     </div>
                                 @endif
-                                @if($errors->has('speciality_id'))
+                                    @if($errors->has('gender'))
 
                                     <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                                        <span class="alert-text"><strong>Error!</strong> {{ $errors->first('speciality_id') }}</span>
+                                        <span class="alert-text"><strong>Error!</strong> {{ $errors->first('gender') }}</span>
                                         <button type="button" class="btn-close" data-bs-dismiss="alert"
                                                 aria-label="Close">
                                             <span aria-hidden="true"></span>
@@ -108,11 +108,13 @@
                                             class="form-control mb-3 custom-select"
                                             name="gender"
                                             aria-hidden="true" required>
-                                            <option value="">Please Select Your Gender</option>
-                                            <option value="Male" name = "Male">Male</option>
-                                            <option value="Female" name="Female">Female</option>
+                                            <option >Please Select Your Gender</option>
+                                            <option value="Male" >Male</option>
+                                            <option value="Female">Female</option>
 
                                         </select>
+
+
                                     </div>
                                     <div class="input-group input-group-outline mb-3">
                                         <label class="form-label">Password</label>

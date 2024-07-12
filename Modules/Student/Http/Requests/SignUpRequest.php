@@ -3,6 +3,7 @@
 namespace Modules\Student\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class SignUpRequest extends FormRequest
 {
@@ -15,6 +16,7 @@ class SignUpRequest extends FormRequest
             'name' => 'required|string|max:255',
             'mobile' => 'required|string|max:255|unique:teachers',
             'password' => 'required|string|min:8',
+            'gender' => ['required'],
         ];
     }
 

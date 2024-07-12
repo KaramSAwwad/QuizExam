@@ -39,10 +39,10 @@
                                     </div>
                                     <p class="text-sm mt-3">
                                     <h6>Exam Speciality: <span
-                                            class="text-muted">{{$available_exams[$i]->teacher->name}}</span></h6>
-                                    <h6>Teacher Name: <span
                                             class="text-muted">{{$available_exams[$i]->speciality->name}}</span></h6>
-                                    <h6>Exam Speciality: <span
+                                    <h6>Teacher Name: <span
+                                            class="text-muted">{{$available_exams[$i]->teacher->name}}</span></h6>
+                                    <h6>Count Of Questions <span
                                             class="text-muted">{{$available_exams[$i]->questions_count}}</span></h6>
 
                                     </p>

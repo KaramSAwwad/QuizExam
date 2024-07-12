@@ -61,9 +61,10 @@
                                 </div>
                                 <div class="col-2 p-2">
                                     <div class="input-group input-group-dynamic">
-                                        <label for="QuestionMark" class="form-label">Questions Mark</label>
-                                        <input type="number" class="form-control" min="0.25" step="0.25"
-                                               value="{{$exam->questions[$i]->mark}}"
+                                        <label for="QuestionMark" class="form-label">Your Mark</label>
+                                        <input type="text" class="form-control" min="0.25" step="0.25"
+{{--                                               value="{{$exam->questions[$i]->mark}}"--}}
+                                               value="{{$my_choices[$i]->mark}} From {{$exam->questions[$i]->mark}}"
                                                id="QuestionMark" onfocus="focused(this)" onfocusout="defocused(this)"
                                                disabled>
                                     </div>
@@ -81,7 +82,7 @@
                                 <div class="col-12">
                                     <div class="input-group  my-3" style="border: 2px dotted #1a73e8; border-radius: 6px;">
                                         <label class="form-label">Your Choice</label>
-                                        <input type="text"  class="form-control" value="Your Choice: {{$exam->questions[$i]->answers[0]->answer_text}}" disabled>
+                                        <input type="text"  class="form-control" value="Your Choice: {{$my_choices[$i]->answer->answer_text}}" disabled>
                                     </div>
                                 </div>
 
@@ -106,14 +107,15 @@
                             </div>
                             <hr class="my-4"
                                 style=" border-style: dotted; background-image: linear-gradient(0deg,dimgray 2px,rgba(156,39,176,0) 0),linear-gradient(0deg,#d2d2d2 1px,hsla(0,0%,82%,0) 0);">
-                        @endfor
 
-                        <div class="d-flex justify-content-end mt-4">
+                        @endfor
+                     <div class="d-flex justify-content-end mt-4">
                             <a type="button" href="{{route('student.show.my.finished.exams')}}" class="btn btn-light m-0">Cancel</a>
                         </div>
                 </div>
             </div>
         </div>
     </div>
+
 
 @endsection

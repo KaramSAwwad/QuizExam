@@ -6,11 +6,13 @@
             <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                 <a class="d-block blur-shadow-image">
                     <img
-                        src="https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/products/product-1-min.jpg"
+{{--                        src="https://facts.net/wp-content/uploads/2023/09/18-fascinating-facts-about-teacher-1695689724.jpg"--}}
+                        src="{{asset('assets/img/teacher.jpg')}}"
                         alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
                 </a>
                 <div class="colored-shadow"
-                     style="background-image: url(&quot;https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/products/product-1-min.jpg&quot;);"></div>
+{{--                     style="background-image: url(&quot;https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/products/product-1-min.jpg&quot;);"></div>--}}
+                     style="background-image: url(&quot;https://facts.net/wp-content/uploads/2023/09/18-fascinating-facts-about-teacher-1695689724.jpg&quot;);"></div>
             </div>
             <div class="card-body text-center">
                 <div class="d-flex mt-n6 mx-auto">
@@ -45,11 +47,12 @@
             <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2" >
                 <a class="d-block blur-shadow-image">
                     <img
-                        src="https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/products/product-1-min.jpg"
+{{--                        src="https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/products/product-1-min.jpg"--}}
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkyTfVBpEoEkHVnDg9sN43g8KZgtCEiJ6h5w&s"
                         alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
                 </a>
                 <div class="colored-shadow"
-                     style="background-image: url(&quot;https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/products/product-1-min.jpg&quot;);"></div>
+                     style="background-image: url(&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkyTfVBpEoEkHVnDg9sN43g8KZgtCEiJ6h5w&s&quot;);"></div>
             </div>
             <div class="card-body text-center">
                 <div class="d-flex mt-n6 mx-auto">

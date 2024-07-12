@@ -40,7 +40,6 @@ class AuthController extends Controller
     public function signingUp(SignUpRequest $request)
     {
         $validated = $request->validated();
-        dd($validated);
         $student =  Student::create(
             [
                 'name' => $validated['name'],
